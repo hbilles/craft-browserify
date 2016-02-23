@@ -99,7 +99,7 @@ read domainName
 
 echo ''
 coloredEcho "What is the TLD for the production website? (com, org, edu, ...)"
-read productionTld
+read productionTLD
 
 echo ''
 coloredEcho "What is the staging domain for this website? (e.g., line58.com)"
@@ -120,13 +120,13 @@ coloredEcho "Writing Craft general.php config using provided settings..." green
 rm -rf craft/config/general.php
 sed "s/\<\%\= domainName \%\>/$domainName/g" <$templateDir/_general.php >craft/config/general.php
 sed -i '' "s/\<\%\= stagingDomain \%\>/$stagingDomain/g" craft/config/general.php
-sed -i '' "s/\<\%\= productionTld \%\>/$productionTld/g" craft/config/general.php
+sed -i '' "s/\<\%\= productionTLD \%\>/$productionTLD/g" craft/config/general.php
 
 coloredEcho "Writing Craft db.php config using provided settings..." green
 rm -rf craft/config/db.php
 sed "s/\<\%\= domainName \%\>/$domainName/g" <$templateDir/_db.php >craft/config/db.php
 sed -i '' "s/\<\%\= stagingDomain \%\>/$stagingDomain/g" craft/config/db.php
-sed -i '' "s/\<\%\= productionTld \%\>/$productionTld/g" craft/config/db.php
+sed -i '' "s/\<\%\= productionTLD \%\>/$productionTLD/g" craft/config/db.php
 
 coloredEcho "Cleaning up..." green
 rm -rf craft-browserify-template
