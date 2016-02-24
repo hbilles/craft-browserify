@@ -75,11 +75,16 @@ rm -rf ./public/web.config
 mv $templateDir/htaccess ./public/.htaccess
 mv $templateDir/gitignore .gitignore
 
+mkdir _database
+mkdir _database/dump
+
 coloredEcho "  mv $templateDir/src ./src" magenta
 coloredEcho "  mv $templateDir/ui ./public" magenta
 coloredEcho "  mv $templateDir/templates ./craft" magenta
 coloredEcho "  mv $templateDir/htaccess ./public/.htaccess" magenta
 coloredEcho "  mv $templateDir/gitignore .gitignore" magenta
+coloredEcho "  mkdir _database" magenta
+coloredEcho "  mkdir _database/dump" magenta
 
 mv $templateDir/dbPullProduction.sh dbPullProduction.sh
 mv $templateDir/dbPullStaging.sh dbPullStaging.sh
