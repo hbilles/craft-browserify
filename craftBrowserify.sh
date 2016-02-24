@@ -81,6 +81,22 @@ coloredEcho "  mv $templateDir/templates ./craft" magenta
 coloredEcho "  mv $templateDir/htaccess ./public/.htaccess" magenta
 coloredEcho "  mv $templateDir/gitignore .gitignore" magenta
 
+mv $templateDir/dbPullProduction.sh dbPullProduction.sh
+mv $templateDir/dbPullStaging.sh dbPullStaging.sh
+mv $templateDir/dbPushStaging.sh dbPushStaging.sh
+chmod +x dbPullProduction.sh
+chmod +x dbPullStaging.sh
+chmod +x dbPushStaging.sh
+
+echo ''
+coloredEcho "  mv $templateDir/dbPullProduction.sh dbPullProduction.sh" magenta
+coloredEcho "  mv $templateDir/dbPullStaging.sh dbPullStaging.sh" magenta
+coloredEcho "  mv $templateDir/dbPushStaging.sh dbPushStaging.sh" magenta
+echo ''
+coloredEcho "  chmod +x dbPullProduction.sh" magenta
+coloredEcho "  chmod +x dbPullStaging.sh" magenta
+coloredEcho "  chmod +x dbPushStaging.sh" magenta
+
 echo ''
 echo '------------------'
 echo ''
