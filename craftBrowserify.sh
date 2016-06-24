@@ -69,7 +69,6 @@ templateDir=craft-browserify-template
 cp -rp $templateDir/src ./src
 cp -rp $templateDir/ui ./public
 rm -rf craft/templates
-cp -rp $templateDir/templates ./craft
 rm -rf ./public/htaccess
 rm -rf ./public/web.config
 mv $templateDir/htaccess ./public/.htaccess
@@ -80,7 +79,6 @@ mkdir _database/dump
 
 coloredEcho "  mv $templateDir/src ./src" magenta
 coloredEcho "  mv $templateDir/ui ./public" magenta
-coloredEcho "  mv $templateDir/templates ./craft" magenta
 coloredEcho "  mv $templateDir/htaccess ./public/.htaccess" magenta
 coloredEcho "  mv $templateDir/gitignore .gitignore" magenta
 coloredEcho "  mkdir _database" magenta
