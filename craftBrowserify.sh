@@ -75,6 +75,8 @@ mv $templateDir/htaccess ./public/.htaccess
 mv $templateDir/gitignore .gitignore
 rm -rf ./public/index.php
 mv $templateDir/index.php ./public
+mv $templateDir/.babelrc .babelrc
+mv $templateDir/.eslintrc .eslintrc
 
 mkdir _database
 mkdir _database/dump
@@ -84,6 +86,8 @@ coloredEcho "  mv $templateDir/ui ./public" magenta
 coloredEcho "  mv $templateDir/htaccess ./public/.htaccess" magenta
 coloredEcho "  mv $templateDir/gitignore .gitignore" magenta
 coloredEcho "  mv $templateDir/index.php ./public/index.php" magenta
+coloredEcho "  mv $templateDir/.babelrc .babelrc" magenta
+coloredEcho "  mv $templateDir/.eslintrc .eslintrc" magenta
 coloredEcho "  mkdir _database" magenta
 coloredEcho "  mkdir _database/dump" magenta
 
