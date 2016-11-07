@@ -68,7 +68,7 @@ echo ''
 coloredEcho 'Downloading craft-browserify-template...' green
 echo ''
 
-git clone git@github.com:hbilles/craft-browserify-template.git
+git clone https://github.com/hbilles/craft-browserify-template.git
 
 templateDir=craft-browserify-template
 cp -rp $templateDir/src ./src
