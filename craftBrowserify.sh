@@ -84,6 +84,7 @@ mv $templateDir/.eslintrc .eslintrc
 mv $templateDir/env.example ./dist/.env.example
 rm -rf $craftDir/config/db.php
 mv $templateDir/db.php $craftDir/config/db.php
+mv $templateDir/README.md README.md
 
 mkdir _database
 mkdir _database/dump
@@ -97,6 +98,7 @@ coloredEcho "  mv $templateDir/.babelrc .babelrc" magenta
 coloredEcho "  mv $templateDir/.eslintrc .eslintrc" magenta
 coloredEcho "  mv $templateDir/env.example ./dist/.env.example" magenta
 coloredEcho "  mv $templateDir/db.php $craftDir/config/db.php" magenta
+coloredEcho "  mv $templateDir/README.md README.md" magenta
 coloredEcho "  mkdir _database" magenta
 coloredEcho "  mkdir _database/dump" magenta
 
