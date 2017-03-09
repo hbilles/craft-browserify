@@ -119,7 +119,7 @@ coloredEcho "  chmod +x dbPullStaging.sh" magenta
 coloredEcho "  chmod +x dbPushStaging.sh" magenta
 
 coloredEcho 'Downloading SEOmatic plugin...' green
-git clone https://github.com/nystudio107/seomatic.git $craftDir/plugins
+git clone https://github.com/nystudio107/seomatic.git $craftDir/plugins/seomatic
 
 echo ''
 echo '------------------'
