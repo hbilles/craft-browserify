@@ -110,16 +110,9 @@ chmod +x dbPullStaging.sh
 chmod +x dbPushStaging.sh
 
 echo ''
-coloredEcho "  mv $templateDir/dbPullProduction.sh dbPullProduction.sh" magenta
-coloredEcho "  mv $templateDir/dbPullStaging.sh dbPullStaging.sh" magenta
-coloredEcho "  mv $templateDir/dbPushStaging.sh dbPushStaging.sh" magenta
-echo ''
-coloredEcho "  chmod +x dbPullProduction.sh" magenta
-coloredEcho "  chmod +x dbPullStaging.sh" magenta
-coloredEcho "  chmod +x dbPushStaging.sh" magenta
-
 coloredEcho 'Downloading SEOmatic plugin...' green
 git clone https://github.com/nystudio107/seomatic.git $craftDir/plugins/seomatic
+rm -rf $craftDir/plugins/seomatic/.git
 
 echo ''
 echo '------------------'
